@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AdvanzoHub — School Management Platform</title>
+      <meta name="description" content="A refined, multi-tenant school management platform. Run academics, operations, and administration from one unified system.">
+      <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+      <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+      <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   </head>
+   <body>
+      <!-- HEADER -->
+      <div class="site-header" id="hdr">
+         <div class="topbar">
+            <div class="container">
+               <div>Admissions open for Session 2026 — onboarding in days, not weeks</div>
+               <div class="tb-right">
+                  <span><i class="bi bi-telephone"></i> +92 300 1234567</span>
+                  <a href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+               <a class="brand" href="#">
+                  <span class="brand-mark">
+                     <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <rect x="2" y="2" width="96" height="96" rx="18" fill="#0f4d39"/>
+                        <rect x="9" y="9" width="82" height="82" rx="12" fill="none" stroke="#a6824c" stroke-width="1.6"/>
+                        <g stroke-linecap="round">
+                           <line x1="50" y1="29" x2="33" y2="73" stroke="#faf7f0" stroke-width="7"/>
+                           <line x1="50" y1="29" x2="67" y2="73" stroke="#faf7f0" stroke-width="7"/>
+                           <line x1="40.5" y1="59" x2="59.5" y2="59" stroke="#a6824c" stroke-width="5"/>
+                        </g>
+                     </svg>
+                  </span>
+                  <span><span class="brand-name d-block">AdvanzoHub</span><span class="brand-tag">School Management</span></span>
+               </a>
+               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nm"><i class="bi bi-list fs-3"></i></button>
+               <div class="collapse navbar-collapse justify-content-end" id="nm">
+                  <ul class="navbar-nav align-items-lg-center">
+                     <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#modules">Modules</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#roles">Roles</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-em" href="#contact">Request Demo</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- HERO -->
+      <header class="hero">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-6">
+                  <span class="label">School Management Platform</span>
+                  <h1 class="display-1">Run academics, operations &amp; administration from <span class="accent">one unified system.</span></h1>
+                  <p class="lede">AdvanzoHub brings central oversight and tenant-level execution together — students, staff, classes, assessments, and finance, governed by consistent, dependable workflows.</p>
+                  <div class="hero-cta">
+                     <a href="#contact" class="btn btn-em">Request a Demo</a>
+                     <a href="#modules" class="tlink">Explore Modules <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                  <div class="hero-stats">
+                     <div class="hero-stat">
+                        <div class="v">99.95%</div>
+                        <div class="k">Uptime</div>
+                     </div>
+                     <div class="hero-stat">
+                        <div class="v">Multi-tenant</div>
+                        <div class="k">Isolated data</div>
+                     </div>
+                     <div class="hero-stat">
+                        <div class="v">Web + API</div>
+                        <div class="k">One architecture</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="hero-figure reveal">
+                     <div class="gold-block"></div>
+                     <div class="border-line"></div>
+                     <div class="frame"><img src="assets/images/hero-img.avif" alt="Students and staff collaborating"></div>
+                     <div class="hero-card">
+                        <div class="hc-v">1,248</div>
+                        <div class="hc-rule"></div>
+                        <div class="hc-k">Students managed today</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- TRUST LINE -->
+      <section class="trustline">
+         <div class="container">
+            <div class="tl-txt">Trusted across <b>Academies</b> · <b>K-12 Schools</b> · <b>Colleges</b> · <b>Multi-Campus Networks</b> · <b>Tuition Centers</b></div>
+         </div>
+      </section>
+      <!-- PLATFORM -->
+      <section class="sec" id="platform">
+         <div class="container">
+            <div class="row g-5 align-items-end mb-5">
+               <div class="col-lg-7 sec-head reveal">
+                  <span class="label">The Architecture</span>
+                  <h2 class="display-2">A platform structured for oversight and independence in equal measure.</h2>
+               </div>
+               <div class="col-lg-5 reveal">
+                  <p class="lede mb-0">Central administration, isolated tenant databases, and shared services — composed for maintainability and built to scale with every institution you add.</p>
+               </div>
+            </div>
+            <div class="row g-0">
+               <div class="col-md-4 reveal">
+                  <div class="ix-col">
+                     <div class="ix-ic"><i class="bi bi-hdd-network"></i></div>
+                     <div class="ix-num">01</div>
+                     <h4>Central Control</h4>
+                     <p>Manage schools, subscriptions, modules, and reporting from a single dedicated layer.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 reveal">
+                  <div class="ix-col">
+                     <div class="ix-ic"><i class="bi bi-buildings"></i></div>
+                     <div class="ix-num">02</div>
+                     <h4>Tenant Operations</h4>
+                     <p>Isolated school data supports secure, independent workflows for every institution.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 reveal">
+                  <div class="ix-col">
+                     <div class="ix-ic"><i class="bi bi-box"></i></div>
+                     <div class="ix-num">03</div>
+                     <h4>Shared Services</h4>
+                     <p>Reusable services and repository patterns keep modules consistent across web and API.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- SPLIT 1 -->
+      <section class="sec sec-cream2">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-6 reveal">
+                  <div class="split-fig">
+                     <div class="bl"></div>
+                     <img src="assets/images/academic-operation.avif" alt="Academic operations">
+                     <div class="split-tag">
+                        <div class="v">96%</div>
+                        <div class="k">Attendance<br>accuracy</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 reveal">
+                  <span class="label">Academic Operations</span>
+                  <h2 class="display-2 mt-3">Classes, attendance &amp; assessments, in a single clear view.</h2>
+                  <p class="lede mt-2">Give academic leads one source of truth. Schedules, daily attendance, exams, and progress reporting remain consistent across every section and term.</p>
+                  <ul class="split-list">
+                     <li><i class="bi bi-dot"></i> Class, section, and subject management with session controls</li>
+                     <li><i class="bi bi-dot"></i> Attendance and leave tracking for students and staff</li>
+                     <li><i class="bi bi-dot"></i> Exams, grading, and progress with consistent reporting</li>
+                  </ul>
+                  <a href="#modules" class="tlink mt-4 d-inline-flex">Explore academics <i class="bi bi-arrow-right"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- SPLIT 2 -->
+      <section class="sec">
+         <div class="container">
+            <div class="row align-items-center g-5 flex-lg-row-reverse">
+               <div class="col-lg-6 reveal">
+                  <div class="split-fig left">
+                     <div class="bl"></div>
+                     <img src="assets/images/payrole.avif" alt="Finance and administration">
+                     <div class="split-tag">
+                        <div class="v">Rs 4.2M</div>
+                        <div class="k">Fees tracked<br>this term</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 reveal">
+                  <span class="label">Finance &amp; Administration</span>
+                  <h2 class="display-2 mt-3">Fees, payroll &amp; finance, with complete visibility.</h2>
+                  <p class="lede mt-2">Move from scattered spreadsheets to one governed platform — generate invoices, track collections, manage payroll, and monitor finances with confidence.</p>
+                  <ul class="split-list">
+                     <li><i class="bi bi-dot"></i> Fee invoices and finance tracking with collection insight</li>
+                     <li><i class="bi bi-dot"></i> Staff profiles and payroll in a single workflow</li>
+                     <li><i class="bi bi-dot"></i> Central reporting across every tenant school</li>
+                  </ul>
+                  <a href="#contact" class="tlink mt-4 d-inline-flex">Request a demo <i class="bi bi-arrow-right"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MODULES -->
+      <section class="sec sec-cream2" id="modules">
+         <div class="container">
+            <div class="row g-5 align-items-end mb-4">
+               <div class="col-lg-7 sec-head reveal">
+                  <span class="label">Core Modules</span>
+                  <h2 class="display-2">Everything required to manage the full school lifecycle.</h2>
+               </div>
+               <div class="col-lg-5 reveal">
+                  <p class="lede mb-0">Nine essential modules that keep academics, people, and finance running together in one place.</p>
+               </div>
+            </div>
+            <div class="row g-lg-5">
+               <div class="col-lg-6 reveal">
+                  <div class="mod-row"><span class="mn">01</span><span class="mi"><i class="bi bi-person-vcard"></i></span><span class="mt">Student admissions &amp; records</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">02</span><span class="mi"><i class="bi bi-grid-3x3-gap"></i></span><span class="mt">Class, section &amp; subjects</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">03</span><span class="mi"><i class="bi bi-people"></i></span><span class="mt">Staff profiles &amp; payroll</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">04</span><span class="mi"><i class="bi bi-calendar2-check"></i></span><span class="mt">Attendance &amp; leave management</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">05</span><span class="mi"><i class="bi bi-mortarboard"></i></span><span class="mt">Exams, grading &amp; progress</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+               </div>
+               <div class="col-lg-6 reveal">
+                  <div class="mod-row"><span class="mn">06</span><span class="mi"><i class="bi bi-journal-text"></i></span><span class="mt">Assignments &amp; lesson planning</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">07</span><span class="mi"><i class="bi bi-receipt"></i></span><span class="mt">Fee invoices &amp; finance tracking</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">08</span><span class="mi"><i class="bi bi-megaphone"></i></span><span class="mt">Announcements &amp; communication</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row"><span class="mn">09</span><span class="mi"><i class="bi bi-gear"></i></span><span class="mt">School settings &amp; session controls</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+                  <div class="mod-row" style="border-bottom:1px solid var(--line)"><span class="mn">+</span><span class="mi"><i class="bi bi-braces"></i></span><span class="mt">Web &amp; API parity across modules</span><span class="ma"><i class="bi bi-arrow-up-right"></i></span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ROLES -->
+      <section class="sec" id="roles">
+         <div class="container">
+            <div class="sec-head text-center mb-5 reveal">
+               <span class="label center">For Every Role</span>
+               <h2 class="display-2 mt-3">One platform, tailored to each hand that touches it.</h2>
+            </div>
+            <ul class="nav role-nav justify-content-center reveal" role="tablist">
+               <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#r1" type="button">Administrator</button></li>
+               <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#r2" type="button">Teacher</button></li>
+               <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#r3" type="button">Accounts</button></li>
+               <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#r4" type="button">Parent &amp; Student</button></li>
+            </ul>
+            <div class="tab-content reveal">
+               <div class="tab-pane fade show active" id="r1">
+                  <div class="row align-items-center g-5">
+                     <div class="col-lg-7">
+                        <div class="role-fig">
+                           <div class="bl"></div>
+                           <img src="assets/images/role-1.avif" alt="Administration">
+                        </div>
+                     </div>
+                     <div class="col-lg-5 role-pane">
+                        <h3>Central oversight across every school</h3>
+                        <p class="lede mt-2">Monitor performance, finance, and operations from a dedicated central layer with full role and permission control.</p>
+                        <ul class="role-list">
+                           <li><i class="bi bi-check2"></i> Manage schools, subscriptions &amp; modules</li>
+                           <li><i class="bi bi-check2"></i> Role and permission management</li>
+                           <li><i class="bi bi-check2"></i> Central reporting across tenants</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="r2">
+                  <div class="row align-items-center g-5">
+                     <div class="col-lg-7">
+                        <div class="role-fig">
+                           <div class="bl"></div>
+                           <img src="assets/images/role-2.avif" alt="Teacher">
+                        </div>
+                     </div>
+                     <div class="col-lg-5 role-pane">
+                        <h3>Less administration, more teaching</h3>
+                        <p class="lede mt-2">Streamline lesson planning, grading, and communication so teachers spend their time where it matters most.</p>
+                        <ul class="role-list">
+                           <li><i class="bi bi-check2"></i> Assignments &amp; lesson planning</li>
+                           <li><i class="bi bi-check2"></i> Exams, grading &amp; progress</li>
+                           <li><i class="bi bi-check2"></i> Class attendance in a few taps</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="r3">
+                  <div class="row align-items-center g-5">
+                     <div class="col-lg-7">
+                        <div class="role-fig">
+                           <div class="bl"></div>
+                           <img src="assets/images/role-3.avif" alt="Accounts">
+                        </div>
+                     </div>
+                     <div class="col-lg-5 role-pane">
+                        <h3>Fees and finance, fully accounted for</h3>
+                        <p class="lede mt-2">Generate invoices, track collections, and manage payroll with consistent, auditable workflows.</p>
+                        <ul class="role-list">
+                           <li><i class="bi bi-check2"></i> Fee invoices &amp; collection tracking</li>
+                           <li><i class="bi bi-check2"></i> Staff payroll management</li>
+                           <li><i class="bi bi-check2"></i> Finance reporting &amp; insight</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="r4">
+                  <div class="row align-items-center g-5">
+                     <div class="col-lg-7">
+                        <div class="role-fig">
+                           <div class="bl"></div>
+                           <img src="assets/images/role-4.avif" alt="Parents and students">
+                        </div>
+                     </div>
+                     <div class="col-lg-5 role-pane">
+                        <h3>Clear communication, always on time</h3>
+                        <p class="lede mt-2">Keep families informed with announcements, progress, and fee updates in one consistent place.</p>
+                        <ul class="role-list">
+                           <li><i class="bi bi-check2"></i> Announcements &amp; communication</li>
+                           <li><i class="bi bi-check2"></i> Progress &amp; attendance visibility</li>
+                           <li><i class="bi bi-check2"></i> Fee status updates</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- INDUSTRIES -->
+      <section class="sec sec-cream2">
+         <div class="container">
+            <div class="sec-head text-center mb-5 reveal">
+               <span class="label center">Where It Fits</span>
+               <h2 class="display-2 mt-3">One platform for every kind of institution.</h2>
+            </div>
+            <div class="row g-3">
+               <div class="col-md-6 col-lg-4 reveal">
+                  <a class="ind" href="#contact">
+                     <img src="assets/images/platform-1.avif" alt="K-12">
+                     <div class="ind-body">
+                        <span>Admissions to graduation</span>
+                        <h5>K-12 Schools</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-6 col-lg-4 reveal">
+                  <a class="ind" href="#contact">
+                     <img src="assets/images/platform-2.avif" alt="Multi-campus">
+                     <div class="ind-body">
+                        <span>Central + tenant control</span>
+                        <h5>Multi-Campus Networks</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-6 col-lg-4 reveal">
+                  <a class="ind" href="#contact">
+                     <img src="assets/images/platform-3.avif" alt="Colleges">
+                     <div class="ind-body">
+                        <span>Sessions, terms &amp; grading</span>
+                        <h5>Colleges</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-6 col-lg-4 reveal">
+                  <a class="ind" href="#contact">
+                     <img src="assets/images/platform-4.avif" alt="Academies">
+                     <div class="ind-body">
+                        <span>Flexible module setup</span>
+                        <h5>Academies</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-6 col-lg-4 reveal">
+                  <a class="ind" href="#contact">
+                     <img src="assets/images/platform-5.avif" alt="Tuition centers">
+                     <div class="ind-body">
+                        <span>Lightweight operations</span>
+                        <h5>Tuition Centers</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-6 col-lg-4 reveal">
+                  <a class="ind" href="#contact">
+                     <img src="assets/images/platform-6.avif" alt="Online">
+                     <div class="ind-body">
+                        <span>Web + API parity</span>
+                        <h5>Online &amp; Hybrid</h5>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WORKFLOW -->
+      <section class="sec" id="workflow">
+         <div class="container">
+            <div class="row g-5 align-items-end mb-2">
+               <div class="col-lg-7 sec-head reveal">
+                  <span class="label">Implementation</span>
+                  <h2 class="display-2">A measured rollout, from provisioning to scale.</h2>
+               </div>
+               <div class="col-lg-5 reveal">
+                  <p class="lede mb-0">A guided sequence that gets every institution live with confidence — no scramble, no guesswork.</p>
+               </div>
+            </div>
+            <div class="flow">
+               <div class="row g-4">
+                  <div class="col-md-6 col-lg-3 reveal">
+                     <div class="flow-item">
+                        <div class="flow-num">01</div>
+                        <div class="flow-rule"></div>
+                        <h5>Provision School</h5>
+                        <p>Create the tenant setup with required modules and defaults.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 reveal">
+                     <div class="flow-item">
+                        <div class="flow-num">02</div>
+                        <div class="flow-rule"></div>
+                        <h5>Configure Academic Data</h5>
+                        <p>Add classes, sections, sessions, terms, and grading rules.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 reveal">
+                     <div class="flow-item">
+                        <div class="flow-num">03</div>
+                        <div class="flow-rule"></div>
+                        <h5>Enable Operations</h5>
+                        <p>Run attendance, assessments, payroll, and fee workflows.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 reveal">
+                     <div class="flow-item">
+                        <div class="flow-num">04</div>
+                        <div class="flow-rule"></div>
+                        <h5>Monitor &amp; Scale</h5>
+                        <p>Use central insight to optimise and expand deployments.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- EMERALD BAND -->
+      <section class="band">
+         <div class="container">
+            <div class="row g-5 align-items-center">
+               <div class="col-lg-6 reveal">
+                  <span class="label light">Stable &amp; Scalable</span>
+                  <h2 class="display-2 mt-3">Built on a dependable, modular foundation.</h2>
+                  <p class="mt-2 mb-0">Designed to support school-level customization while preserving platform-wide consistency across web and API.</p>
+                  <div class="band-tech mt-4">
+                     <span class="band-pill"><i class="bi bi-stack"></i> Laravel</span>
+                     <span class="band-pill"><i class="bi bi-diagram-3"></i> Multi-Tenant</span>
+                     <span class="band-pill"><i class="bi bi-shield-lock"></i> Roles &amp; Permissions</span>
+                     <span class="band-pill"><i class="bi bi-hdd-stack"></i> Isolated Databases</span>
+                     <span class="band-pill"><i class="bi bi-braces"></i> REST API</span>
+                  </div>
+               </div>
+               <div class="col-lg-5 offset-lg-1">
+                  <div class="row g-4">
+                     <div class="col-6 reveal">
+                        <div class="stat">
+                           <div class="v">99.95<em>%</em></div>
+                           <div class="k">Platform uptime</div>
+                        </div>
+                     </div>
+                     <div class="col-6 reveal">
+                        <div class="stat">
+                           <div class="v">24<em>/7</em></div>
+                           <div class="k">Operations ready</div>
+                        </div>
+                     </div>
+                     <div class="col-6 reveal">
+                        <div class="stat">
+                           <div class="v">1<em>·</em></div>
+                           <div class="k">Unified system</div>
+                        </div>
+                     </div>
+                     <div class="col-6 reveal">
+                        <div class="stat">
+                           <div class="v">∞</div>
+                           <div class="k">Tenants supported</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- TESTIMONIALS -->
+      <section class="sec">
+         <div class="container">
+            <div class="sec-head mb-4 reveal">
+               <span class="label">In Their Words</span>
+               <h2 class="display-2">Built to simplify the everyday work of running a school.</h2>
+            </div>
+            <div class="row g-5">
+               <div class="col-lg-4 reveal">
+                  <div class="quote">
+                     <div class="qm">&ldquo;</div>
+                     <p>Our admin team now tracks attendance and fee data in minutes, not hours.</p>
+                     <div class="who">School Operations Lead</div>
+                     <div class="org">K-12 Network</div>
+                  </div>
+               </div>
+               <div class="col-lg-4 reveal">
+                  <div class="quote">
+                     <div class="qm">&ldquo;</div>
+                     <p>The central and tenant model gives us control while each school works independently.</p>
+                     <div class="who">Platform Administrator</div>
+                     <div class="org">Education Group</div>
+                  </div>
+               </div>
+               <div class="col-lg-4 reveal">
+                  <div class="quote">
+                     <div class="qm">&ldquo;</div>
+                     <p>Academic workflows are clearer, and reporting is finally consistent across modules.</p>
+                     <div class="who">Academic Coordinator</div>
+                     <div class="org">Private School</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- CONTACT FORM -->
+      <section class="sec sec-cream2" id="contact">
+         <div class="container">
+            <div class="form-wrap reveal">
+               <div class="row g-0">
+                  <div class="col-lg-6">
+                     <div class="form-left">
+                        <span class="label">Get Started</span>
+                        <h2 class="display-2 mt-3">Build your school portal with AdvanzoHub.</h2>
+                        <p class="lede mt-2 mb-0">Tell us about your institution and we will guide your onboarding and setup strategy.</p>
+                        <ul>
+                           <li><i class="bi bi-dot"></i> Central dashboard available at <code>/dashboard</code></li>
+                           <li><i class="bi bi-dot"></i> Tenant-ready architecture with isolated databases</li>
+                           <li><i class="bi bi-dot"></i> Built with Laravel and modular services</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="form-right">
+                        <div class="form-field"><label>Institution Name</label><input type="text" placeholder="e.g. Crescent Academy"></div>
+                        <div class="form-field"><label>Work Email</label><input type="email" placeholder="you@school.edu"></div>
+                        <div class="form-field"><label>Contact Number</label><input type="tel" placeholder="+92 300 1234567"></div>
+                        <div class="form-field"><label>How can we help?</label><textarea rows="3" placeholder="Tell us about your institution"></textarea></div>
+                        <button class="btn btn-em w-100" type="button">Send Request</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FINAL CTA -->
+      <section class="pb-5" style="padding-top:0">
+         <div class="container">
+            <div class="final reveal">
+               <div class="row align-items-center g-4">
+                  <div class="col-lg-8">
+                     <span class="label light">Ready When You Are</span>
+                     <h2 class="display-2 mt-3 mb-2">Move from scattered tools to one system built for scale.</h2>
+                     <p class="mb-0">Launch a more efficient school operation — designed, governed, and ready to grow with you.</p>
+                  </div>
+                  <div class="col-lg-4 text-lg-end"><a href="#contact" class="btn btn-gold">Get Started <i class="bi bi-arrow-right ms-1"></i></a></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-4">
+               <div class="col-lg-4">
+                  <a class="brand mb-3" href="#">
+                     <span class="brand-mark">
+                        <svg viewBox="0 0 100 100" aria-hidden="true">
+                           <rect x="2" y="2" width="96" height="96" rx="18" fill="#0f4d39"/>
+                           <rect x="9" y="9" width="82" height="82" rx="12" fill="none" stroke="#a6824c" stroke-width="1.6"/>
+                           <g stroke-linecap="round">
+                              <line x1="50" y1="29" x2="33" y2="73" stroke="#faf7f0" stroke-width="7"/>
+                              <line x1="50" y1="29" x2="67" y2="73" stroke="#faf7f0" stroke-width="7"/>
+                              <line x1="40.5" y1="59" x2="59.5" y2="59" stroke="#a6824c" stroke-width="5"/>
+                           </g>
+                        </svg>
+                     </span>
+                     <span><span class="brand-name d-block">AdvanzoHub</span><span class="brand-tag">School Management</span></span>
+                  </a>
+                  <p style="max-width:300px">Run academics, operations, and administration from one unified, multi-tenant system built for schools.</p>
+                  <div class="soc"><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>
+               </div>
+               <div class="col-6 col-lg-2 offset-lg-1">
+                  <h6>Platform</h6>
+                  <a href="#platform">Architecture</a><a href="#platform">Central Control</a><a href="#platform">Tenant Operations</a>
+               </div>
+               <div class="col-6 col-lg-2">
+                  <h6>Modules</h6>
+                  <a href="#modules">Admissions</a><a href="#modules">Attendance</a><a href="#modules">Fees &amp; Finance</a>
+               </div>
+               <div class="col-6 col-lg-3">
+                  <h6>Contact</h6>
+                  <a href="#contact">Request a Demo</a><a href="#contact">Onboarding</a><a href="#contact">Support</a>
+               </div>
+            </div>
+            <div class="foot-bottom d-flex flex-wrap justify-content-between gap-2">
+               <span>© 2026 AdvanzoHub. Built for school operations.</span>
+               <span class="d-flex gap-4"><a href="#platform" class="d-inline">Platform</a><a href="#modules" class="d-inline">Modules</a><a href="#contact" class="d-inline">Contact</a></span>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
