@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdvanzoHub — Brand Assets</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#1b1a14; --emerald:#0f4d39; --gold:#a6824c; --cream:#faf7f0; --cream2:#f3eee2; --muted:#6c685c; --line:#e6dfcf; }
+  *{ box-sizing:border-box; }
+  body{ font-family:'Jost',sans-serif; background:var(--cream); color:var(--ink); margin:0; padding:48px 24px; }
+  .wrap{ max-width:1000px; margin:0 auto; }
+  .label{ font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); display:inline-flex; align-items:center; gap:12px; }
+  .label::before{ content:""; width:26px; height:1px; background:var(--gold); }
+  h1{ font-family:'Cormorant Garamond',serif; font-weight:700; font-size:2.4rem; margin:14px 0 6px; }
+  .sub{ color:var(--muted); font-weight:300; margin:0 0 40px; }
+  h2{ font-family:'Jost'; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin:38px 0 14px; }
+  .card{ border:1px solid var(--line); background:#fff; padding:46px; display:flex; align-items:center; justify-content:center; }
+  .card.dark{ background:var(--emerald); border-color:var(--emerald); }
+  .card.cream{ background:var(--cream2); }
+  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .marks{ display:flex; align-items:flex-end; gap:34px; flex-wrap:wrap; }
+  .mark-item{ text-align:center; }
+  .mark-item .cap{ font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-top:12px; }
+  .sw{ display:flex; gap:14px; flex-wrap:wrap; margin-top:6px; }
+  .swatch{ border:1px solid var(--line); background:#fff; padding:12px 14px; display:flex; align-items:center; gap:12px; }
+  .chip{ width:34px; height:34px; border:1px solid rgba(0,0,0,.08); }
+  .swatch .n{ font-size:.74rem; } .swatch .h{ font-size:.68rem; color:var(--muted); letter-spacing:.05em; }
+  pre{ background:var(--ink); color:#e8e3d6; padding:20px 22px; border-radius:6px; overflow:auto; font-size:.8rem; line-height:1.6; }
+  .files{ font-size:.85rem; color:var(--muted); line-height:1.9; }
+  .files b{ color:var(--ink); font-weight:500; }
+  @media(max-width:680px){ .grid2{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="label">AdvanzoHub Identity</span>
+  <h1>Logo &amp; Favicon</h1>
+  <p class="sub">Deep emerald, antique gold, warm ivory — a refined academic mark.</p>
+
+  <h2>Primary logo — light backgrounds</h2>
+  <div class="card"><img src="advanzohub-logo.svg" alt="AdvanzoHub logo" style="width:340px;max-width:100%"></div>
+
+  <h2>Reversed logo — dark backgrounds</h2>
+  <div class="card dark"><img src="advanzohub-logo-white.svg" alt="AdvanzoHub logo reversed" style="width:340px;max-width:100%"></div>
+
+  <h2>The mark</h2>
+  <div class="grid2">
+    <div class="card cream"><img src="advanzohub-mark.svg" alt="AdvanzoHub mark" style="width:120px"></div>
+    <div class="card dark"><img src="advanzohub-mark.svg" alt="AdvanzoHub mark" style="width:120px"></div>
+  </div>
+
+  <h2>Favicon — actual sizes</h2>
+  <div class="card cream">
+    <div class="marks">
+      <div class="mark-item"><img src="favicon-16x16.png" width="16" height="16" alt="16"><div class="cap">16 px</div></div>
+      <div class="mark-item"><img src="favicon-32x32.png" width="32" height="32" alt="32"><div class="cap">32 px</div></div>
+      <div class="mark-item"><img src="favicon-48x48.png" width="48" height="48" alt="48"><div class="cap">48 px</div></div>
+      <div class="mark-item"><img src="apple-touch-icon.png" width="80" height="80" alt="apple" style="border-radius:16px"><div class="cap">Apple touch</div></div>
+    </div>
+  </div>
+
+  <h2>Palette</h2>
+  <div class="sw">
+    <div class="swatch"><span class="chip" style="background:#0f4d39"></span><span><span class="n">Emerald</span><br><span class="h">#0F4D39</span></span></div>
+    <div class="swatch"><span class="chip" style="background:#a6824c"></span><span><span class="n">Antique Gold</span><br><span class="h">#A6824C</span></span></div>
+    <div class="swatch"><span class="chip" style="background:#faf7f0"></span><span><span class="n">Ivory</span><br><span class="h">#FAF7F0</span></span></div>
+    <div class="swatch"><span class="chip" style="background:#1b1a14"></span><span><span class="n">Ink</span><br><span class="h">#1B1A14</span></span></div>
+  </div>
+
+  <h2>Add to your site &lt;head&gt;</h2>
+  <pre>&lt;link rel="icon" href="favicon.ico" sizes="any"&gt;
+&lt;link rel="icon" type="image/svg+xml" href="favicon.svg"&gt;
+&lt;link rel="apple-touch-icon" href="apple-touch-icon.png"&gt;</pre>
+
+  <h2>Files included (in the brand folder)</h2>
+  <p class="files">
+    <b>advanzohub-logo.svg</b> — primary, light backgrounds<br>
+    <b>advanzohub-logo-white.svg</b> — reversed, dark backgrounds<br>
+    <b>advanzohub-mark.svg</b> — emblem only<br>
+    <b>favicon.svg</b>, <b>favicon.ico</b> — scalable + multi-size favicon<br>
+    <b>favicon-16/32/48.png</b>, <b>apple-touch-icon.png</b> (180), <b>icon-512.png</b>
+  </p>
+</div>
+</body>
+</html>
